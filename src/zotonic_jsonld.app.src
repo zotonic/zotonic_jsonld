@@ -1,0 +1,9 @@
+{application, zotonic_jsonld, [
+    {description, "JSON-LD context expansion, parsing and generation"},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {applications, [kernel, stdlib, zotonic_rdf, jsxrecord, euneus, inets, ssl]},
+    {env, []},
+    {modules, []},
+    {licenses, ["Apache-2.0"]}
+]}.

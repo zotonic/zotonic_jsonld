@@ -1,0 +1,6 @@
+/_build/
+/_checkouts/
+/erl_crash.dump
+/rebar3.crashdump
+/rebar3
+/rebar3.tmp

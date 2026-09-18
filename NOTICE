@@ -1,0 +1,31 @@
+zotonic_jsonld
+Copyright 2026 Marc Worrell
+
+The Erlang implementation and test runners are licensed under the Apache
+License, Version 2.0. See LICENSE and the source file headers.
+
+Implementation provenance
+-------------------------
+This is an Erlang implementation written for Zotonic from the W3C format
+specifications. It is not a port or direct transliteration of an Elixir or
+Java implementation. No implementation source from the reference projects
+listed below is included.
+
+Specification and behavioral references:
+- W3C JSON-LD 1.1 Processing Algorithms and API:
+  https://www.w3.org/TR/json-ld11-api/
+- Titanium JSON-LD (Java): https://github.com/filip26/titanium-json-ld
+- jsonld-java (Java): https://github.com/jsonld-java/jsonld-java
+- JSON-LD.ex (Elixir): https://github.com/rdf-elixir/jsonld-ex
+
+Third-party test data
+---------------------
+The files in test/data/w3c-jsonld are copied from the W3C JSON-LD Test Suite.
+Their original notices and dual W3C Test Suite / W3C 3-clause BSD licensing
+are retained. See that directory's SOURCE.md, LICENSE.md, README.md and
+LICENSE-W3C-BSD.txt. These fixtures are not relicensed under Apache-2.0.
+
+The BSD option is used here for development and regression testing. The local
+runner is not an authoritative W3C conformance suite and does not imply W3C
+endorsement. Both license texts and pinned upstream provenance are included
+with the fixtures. Preserve these notices when redistributing that data.
