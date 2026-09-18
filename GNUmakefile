@@ -3,7 +3,7 @@ REBAR ?= ./rebar3
 REBAR_URL ?= https://s3.amazonaws.com/rebar3/rebar3
 REBAR_OPTS ?=
 
-.PHONY: all compile upgrade-deps shell test xref dialyzer edoc clean dist-clean
+.PHONY: all compile upgrade-deps shell test xref dialyzer doc edoc clean dist-clean
 
 all: compile
 
@@ -30,6 +30,9 @@ xref: $(REBAR)
 
 dialyzer: $(REBAR)
 	$(REBAR) $(REBAR_OPTS) dialyzer
+
+doc: $(REBAR)
+	$(REBAR) $(REBAR_OPTS) ex_doc
 
 edoc: $(REBAR)
 	$(REBAR) $(REBAR_OPTS) edoc

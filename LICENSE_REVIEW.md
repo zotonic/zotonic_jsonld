@@ -16,7 +16,7 @@ fixtures, notices and declared non-OTP dependencies.
   target, `manifest.html`. Original notices are preserved.
 - Fixture data remains separately licensed. Both W3C license texts are included;
   the BSD option is used for development testing. See
-  [fixture provenance](test/data/w3c-jsonld/SOURCE.md).
+  [fixture provenance](https://github.com/zotonic/zotonic_jsonld/blob/main/test/data/w3c-jsonld/SOURCE.md).
 - Declared dependencies `zotonic_rdf`, `jsxrecord`, `euneus` identify Apache-2.0 in their
   checked-out license files and application metadata. They are dependencies,
   not source copied into this application; this review does not replace their

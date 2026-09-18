@@ -142,11 +142,15 @@ make
 make test
 make xref
 make dialyzer
+make doc
 ```
+
+`make doc` generates ExDoc documentation in `doc/`, with the README as its
+landing page. `make edoc` remains available for EDoc output.
 
 In the Zotonic umbrella the applications are discovered in `_checkouts`.
 The complete W3C JSON-LD test fixture set is vendored in
-[`test/data/w3c-jsonld`](test/data/w3c-jsonld/SOURCE.md), with its original
+[`test/data/w3c-jsonld`](https://github.com/zotonic/zotonic_jsonld/blob/main/test/data/w3c-jsonld/SOURCE.md), with its original
 manifests, input/output documents, support files and licensing.
 `jsonld_w3c_tests` runs the 367 applicable JSON-LD 1.1 expansion cases by default,
 using an explicitly enabled loader that reads only local fixtures. No network
@@ -168,9 +172,9 @@ This is an implementation written for Zotonic, not a port or direct
 transliteration of the Elixir or Java libraries below. Those projects provided
 API and behavior references; their implementation source is not included.
 The vendored fixtures retain their original notices and separate
-[W3C licensing](test/data/w3c-jsonld/LICENSE.md). Full
-[W3C 3-clause BSD terms](test/data/w3c-jsonld/LICENSE-W3C-BSD.txt) and
-[source details](test/data/w3c-jsonld/SOURCE.md) are included alongside them.
+[W3C licensing](https://github.com/zotonic/zotonic_jsonld/blob/main/test/data/w3c-jsonld/LICENSE.md). Full
+[W3C 3-clause BSD terms](https://github.com/zotonic/zotonic_jsonld/blob/main/test/data/w3c-jsonld/LICENSE-W3C-BSD.txt) and
+[source details](https://github.com/zotonic/zotonic_jsonld/blob/main/test/data/w3c-jsonld/SOURCE.md) are included alongside them.
 
 The [completed license review](LICENSE_REVIEW.md) records the checked source
 headers, dependency metadata, pinned fixture revisions and redistribution notices.
